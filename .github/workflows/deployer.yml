@@ -16,6 +16,7 @@ jobs:
 
       - name: Run a one-line script
         run: |
+          git fetch
           git checkout CoreSource
           ls
 
