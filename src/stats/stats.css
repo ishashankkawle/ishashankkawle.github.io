@@ -1,0 +1,12 @@
+@import url('../index.css');
+
+.stats-bar
+{
+    background : #EEE;
+}
+.stats-block
+{
+    padding: 2%;
+    padding-top: 3%;
+}
+

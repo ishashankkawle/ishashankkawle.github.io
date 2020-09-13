@@ -1,0 +1,24 @@
+.navbar
+{
+    z-index: 1;
+}
+.nav-link
+{
+    color: #FFF;
+}
+.nav-link:hover
+{
+    color: #bd2130;
+}
+.navbar-toggler
+{
+    color:#FFF;
+}
+ion-icon
+{
+    color:white
+}
+.main-navbar
+{
+    padding-left: 1px;
+}
