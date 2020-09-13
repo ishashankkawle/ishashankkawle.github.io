@@ -18,6 +18,7 @@ jobs:
         run: |
           git fetch
           git checkout CoreSource
+          ls
           npm run build
           git config --global user.name 'CI_CD Agent'
           git config --global user.email 'skawle631@gmail.com'
