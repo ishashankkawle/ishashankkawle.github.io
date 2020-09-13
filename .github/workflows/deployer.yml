@@ -18,9 +18,14 @@ jobs:
         run: |
           git fetch
           git checkout CoreSource
+          npm run build
+          git config --global user.name 'CI_CD Agent'
+          git config --global user.email 'skawle631@gmail.com'
+          git add -A
+          git commit -am "Automated PUBLISH [SUCCESS] -> CoreSource"
           ls
 
-      - name: Run a multi-line script
+      - name: Copy buld to master branch
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
