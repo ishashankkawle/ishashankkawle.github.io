@@ -3,9 +3,9 @@ name: CI-CD
 
 on:
   push:
-    branches: [ CoreSource ]
+    branches: [ master , CoreSource ]
   pull_request:
-    branches: [ CoreSource ]
+    branches: [ master , CoreSource ]
 
 jobs:
   build:
