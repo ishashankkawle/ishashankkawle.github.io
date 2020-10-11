@@ -47,6 +47,7 @@ jobs:
         run: |
           git checkout master
           git fetch
+          rm -rf *
           git checkout CoreSource -- build
           cp -r build/* .
           rm -rf node_modules
