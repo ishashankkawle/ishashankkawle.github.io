@@ -41,6 +41,19 @@ jobs:
           git commit -am "Automated PUBLISH [SUCCESS] -> CoreSource"
           ls
 
-      - name: Copy buld to master branch
+      - name: Copy build to local master branch
         run: |
-          echo test, and deploy your project.
+          git checkout master
+          git fetch
+          git checkout CoreSource -- build
+          cp -r build/* .
+
+      - name: Final Directory Structure of Master
+      
+      - name: Push changes to github
+        run: |
+          git config --global user.name 'CI_CD Agent'
+          git config --global user.email 'skawle631@gmail.com'
+          git add -A
+          git commit -am "Automated DEPLOY [SUCCESS]"
+          git push
