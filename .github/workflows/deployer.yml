@@ -49,6 +49,8 @@ jobs:
           cp -r build/* .
 
       - name: Final Directory Structure of Master
+        run: |
+          ls
       
       - name: Push changes to github
         run: |
