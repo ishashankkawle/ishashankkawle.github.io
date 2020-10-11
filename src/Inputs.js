@@ -1,4 +1,5 @@
-let inputValues = {
+let inputValues = 
+{
     name : "I am Shashank Kawle",
     intro : "I am a Fullstack Developer from Mumbai, India",
     dob : "03-03-1997",
