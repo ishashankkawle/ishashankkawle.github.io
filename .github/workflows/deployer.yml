@@ -5,7 +5,7 @@ on:
   push:
     branches: [ CoreSource ]
   pull_request:
-    branches: [ master , CoreSource ]
+    branches: [ CoreSource ]
 
 jobs:
   build:
