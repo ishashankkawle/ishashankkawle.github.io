@@ -1,11 +1,32 @@
 import React , { Component } from 'react'
+import inputValues from '../Inputs'
 import './footer.css';
 
 class Footer extends Component
 {
-
+    constructor()
+    {
+        super();
+        this.emailArray = inputValues["emailArray"];
+        this.contactAray = inputValues["contactAray"];
+        this.address = inputValues["address"];
+    }
     render()
     {
+        let emailList = [];
+        let contactList = [];
+        for (let index = 0; index < this.emailArray.length; index++) 
+        {
+            emailList.push(
+                <span className="col-sm-12">{this.emailArray[index]}</span>
+            );
+        }
+        for (let index = 0; index < this.contactAray.length; index++) 
+        {
+            contactList.push(
+                <span className="col-sm-12">{this.contactAray[index]}</span>
+            );
+        }
         return (
             <div id="contact" className="row footer-banner">
                 <div className="container">
@@ -16,20 +37,19 @@ class Footer extends Component
                     <div className="col-sm-4 responsive-handle">
                         <p className="col-sm-12 h5">Email</p>
                         <div className="row">
-                            <span className="col-sm-12">shankextream@gmail.com</span>
-                            <span className="col-sm-12">shashankkawe67@gmail.com</span>
+                            {emailList}
                         </div>
                     </div>
                     <div className="col-sm-4 responsive-handle">
                         <p className="col-sm-12 h5">Contact</p>
                         <div className="row">
-                            <span className="col-sm-12">7400322062</span>
+                            {contactList}
                         </div>
                     </div>
                     <div className="col-sm-4 responsive-handle">
                         <p className="col-sm-12 h5">Address</p>
                         <div className="row">
-                            <span className="col-sm-12">Mitrata society, plot no.70, Room no. C-8, Gorai-1, Boriwali west, Mumbai - 400092</span>
+                            <span className="col-sm-12">{this.address}</span>
                         </div>
                     </div>
                 </div>

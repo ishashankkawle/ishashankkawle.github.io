@@ -1,4 +1,5 @@
 import React , { Component } from 'react'
+import inputValues from '../Inputs'
 import './stats.css'
 
 class  Stats extends Component 
@@ -6,32 +7,30 @@ class  Stats extends Component
     constructor()
     {
         super();
-        this.booksRead = "+50";
-        this.treksCompleted = "7";
-        this.projectsCompleted = "12";
-        this.happyFriends = ">200";
+        this.booksRead = inputValues["booksRead"];
+        this.treksCompleted = inputValues["treksCompleted"];
+        this.projectsCompleted = inputValues["projectsCompleted"];
+        this.happyFriends = inputValues["happyFriends"];
+        this.statsArray = inputValues["stats"];
+        this.statsLimit = inputValues["statsLimit"];
     }
 
     render()
     {
+        let statsList = [];
+        for (let index = 0; index < this.statsLimit; index++) 
+        {
+            const statsObj = this.statsArray[index];
+            statsList.push(
+                <div className="col-sm-3 stats-block">
+                    <span className="display-4">{statsObj["value"]}</span><br></br>
+                    <b className="text-primary">{statsObj["name"]}</b>
+                </div>
+            );
+        }
         return(
                 <div className="row stats-bar">
-                    <div className="col-sm-3 stats-block">
-                        <span className="display-4">{this.booksRead}</span><br></br>
-                        <b className="text-primary">Books read</b>
-                    </div>
-                    <div className="col-sm-3 stats-block">
-                        <span className="display-4">{this.treksCompleted}</span><br></br>
-                        <b className="text-primary">Treks Completed</b>
-                    </div>
-                    <div className="col-sm-3 stats-block">
-                        <span className="display-4">{this.projectsCompleted}</span><br></br>
-                        <b className="text-primary">Projects Completed</b>
-                    </div>
-                    <div className="col-sm-3 stats-block">
-                        <span className="display-4">{this.happyFriends}</span><br></br>
-                        <b className="text-primary">Happy Friends</b>
-                    </div>
+                    {statsList}
                 </div>
         )
     }

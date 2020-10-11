@@ -1,4 +1,5 @@
 import React , { Component } from 'react'
+import inputValues from '../Inputs.js'
 import './about.css'
 
 class About extends Component
@@ -6,7 +7,9 @@ class About extends Component
     constructor()
     {
         super();
-        let dob = "03-03-1997";
+        let dob = inputValues["dob"];
+        this.location = inputValues["location"];
+        this.aboutText = inputValues["aboutyou"];
         this.age = this.calculateAge(dob);
     }
 
@@ -23,7 +26,7 @@ class About extends Component
         <div id="about" className="container banner-about-wrapper">
             <div  className="banner-about">
                 <h4 className="text-primary">Some more about me</h4>
-                <blockquote><p>I am {this.age} years old and currently living in Mumbai. I love to read novels of Dan Brown especially Robart Langdon series. I also like to swim and draw as hobbies. In my free time I love to watch sci-fi / horror movies or go out on trekking.</p></blockquote>
+                <blockquote><p>I am {this.age} years old and currently living in {this.location}. {this.aboutText}</p></blockquote>
             </div>
 
         </div>

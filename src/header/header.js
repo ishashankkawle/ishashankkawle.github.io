@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
+import inputValues from '../Inputs.js'
 import './header.css'
 
 class Header extends Component {
 
     constructor() {
         super();
-        this.name = "I am Shashank Kawle"
-        this.intro = "I am a Fullstack Developer from Mumbai, India"
+        this.name = inputValues["name"]
+        this.intro = inputValues["intro"]
     }
 
     render() {
         return (
-            <div className="row">
+            <div id="header" className="row">
                 <div className="col-sm-12 banner-style-block" >
                     <div className="banner-shadow"></div>
                     <div className="row banner-header justify-content-between align-items-center">

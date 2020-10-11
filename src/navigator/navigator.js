@@ -73,7 +73,7 @@ class Navigator extends Component {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul className="nav ml-auto ml-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Home</a>
+                            <a className="nav-link active" href="#header">Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#about">About</a>
