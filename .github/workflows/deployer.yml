@@ -47,6 +47,7 @@ jobs:
           git fetch
           git checkout CoreSource -- build
           cp -r build/* .
+          rm -rf node-modules
 
       - name: Final Directory Structure of Master
         run: |
