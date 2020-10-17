@@ -1,6 +1,11 @@
 .underdev-box
 {
-    padding-top: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding: 10%;
+}
+@media only screen and (max-width:400px)
+{
+    .developer-bot
+    {
+        display: none;
+    }
 }
