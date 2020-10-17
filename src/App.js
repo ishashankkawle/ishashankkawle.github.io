@@ -1,14 +1,15 @@
 import React, { Component, Suspense } from 'react';
 import './App.css';
 import loader from './assets/preloader.gif';
+const Navigator = React.lazy(() => import('./navigator/navigator'));
 const Header = React.lazy(() => import('./header/header'));
 const About = React.lazy(() => import('./about/about'));
 const Info = React.lazy(() => import('./info/info'));
 const Experience = React.lazy(() => import('./experience/experience'));
 const Stats = React.lazy(() => import('./stats/stats'));
+const Projects = React.lazy(() => import('./projects/projects'));
 const Footer = React.lazy(() => import('./footer/footer'));
 const End = React.lazy(() => import('./endbrand/end'));
-const Navigator = React.lazy(() => import('./navigator/navigator'));
 
 
 class App extends Component 
@@ -32,6 +33,7 @@ class App extends Component
           <Info />
           <Experience />
           <Stats />
+          <Projects/>
           <Footer />
           <End />
         </Suspense>
