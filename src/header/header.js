@@ -24,8 +24,8 @@ class Header extends Component {
                             </div>
                         </div>
                         <div className="col-sm-5 text-right banner-btn-sec">
-                            <a href="#project"><button type="button" className="btn btn-outline-light">Latest projects</button></a><br></br><br></br>
-                            <a href="#about"><button type="button" className="btn btn-outline-light">More about me</button></a>
+                            <a href="#project"><button type="button" className="btn btn-outline-light btn-header">Latest projects</button></a><br></br><br></br>
+                            <a href="#about"><button type="button" className="btn btn-outline-light btn-header">More about me</button></a>
                         </div>
                         <div className="col-sm-1 social-link">
                             <ul className="nav flex-column social-link-list">

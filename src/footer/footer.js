@@ -18,13 +18,13 @@ class Footer extends Component
         for (let index = 0; index < this.emailArray.length; index++) 
         {
             emailList.push(
-                <span className="col-sm-12">{this.emailArray[index]}</span>
+                <span key={index} className="col-sm-12">{this.emailArray[index]}</span>
             );
         }
         for (let index = 0; index < this.contactAray.length; index++) 
         {
             contactList.push(
-                <span className="col-sm-12">{this.contactAray[index]}</span>
+                <span key={index} className="col-sm-12">{this.contactAray[index]}</span>
             );
         }
         return (

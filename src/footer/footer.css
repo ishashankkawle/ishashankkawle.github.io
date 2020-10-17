@@ -4,7 +4,7 @@
 {
     /* background-image: url('../assets/banner-1.jpg'); */
     /* background-size: cover; */
-    background-color: #393E46;
+    background-color: #212529;
     color: #EEE;
     padding: 5%;
     margin-bottom: 5%;
@@ -15,7 +15,7 @@
 {
     .footer-banner
     {
-        background-color: #393E46;
+        background-color: #212529;
         color: #EEE;
         padding: 5%;
         margin-bottom: 5%;
@@ -26,6 +26,7 @@
 .footer-content
 {
     padding-top: 5%;
+    margin: auto;
 }
 .footer-brand
 {
@@ -40,6 +41,6 @@
 {
     [class*="responsive-handle"]
     {
-        margin-bottom: 5%;
+        margin-bottom: 15%;
     }
 }

@@ -58,7 +58,7 @@ class Info extends Component {
         {
             var obj = this.greetingTexts[index]
             greetingItems.push(
-                <blockquote>{obj}</blockquote>
+                <blockquote key={index}>{obj}</blockquote>
             );    
         }
 

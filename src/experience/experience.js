@@ -15,7 +15,7 @@ class Experience extends Component {
         {      
             let obj = this.timeline[index];                      
             items.push(
-                <li className="align-items-center">
+                <li key={index} className="align-items-center">
                     <div className="exp-content">
                         <div className="exp-content-header">
                             <b>{obj.title}<br></br><small className="text-muted">{obj.date}</small></b>

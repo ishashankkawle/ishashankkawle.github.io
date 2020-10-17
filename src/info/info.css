@@ -10,6 +10,14 @@
 {
     margin-bottom: 5%;
 }
+@media only screen and (max-width: 575px)
+{
+    .info-sec-header
+    {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+}
 .skill-progress-bar
 {
     padding-left:0%;

@@ -22,7 +22,7 @@ class  Stats extends Component
         {
             const statsObj = this.statsArray[index];
             statsList.push(
-                <div className="col-sm-3 stats-block">
+                <div key={index} className="col-sm-3 stats-block">
                     <span className="display-4">{statsObj["value"]}</span><br></br>
                     <b className="text-primary">{statsObj["name"]}</b>
                 </div>

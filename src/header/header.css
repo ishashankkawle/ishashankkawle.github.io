@@ -82,3 +82,16 @@
 {
     color:#bd2130;
 }
+.btn-header
+{
+    margin-right: 15px;
+}
+
+
+@media only screen and (max-width:575px)
+{
+    .btn-header
+    {
+        margin-right: auto;
+    }
+}
