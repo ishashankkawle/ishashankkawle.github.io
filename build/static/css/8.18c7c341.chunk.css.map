@@ -1,0 +1,1 @@
+{"version":3,"sources":["stats.css"],"names":[],"mappings":"AAEA,WAEI,eACJ,CACA,aAGI,gBACJ","file":"8.18c7c341.chunk.css","sourcesContent":["@import url('../index.css');\n\n.stats-bar\n{\n    background : #EEE;\n}\n.stats-block\n{\n    padding: 2%;\n    padding-top: 3%;\n}\n\n"]}
