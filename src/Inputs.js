@@ -66,7 +66,7 @@ let inputValues =
         },
         {
             title : "Bachlor of Engineering",
-            date : "June-208", 
+            date : "June-2018", 
             text : "Graduated as Bachelor of Engineering from Atharva College of Engineering affiliated by Mumbai University with CGPA of 7.60"
         },
         {
