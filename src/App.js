@@ -1,21 +1,32 @@
-import React , {Component} from 'react';
+import React, { Component, Suspense } from 'react';
 import './App.css';
-import Header from './header/header'
-import About from './about/about'
-import Info from './info/info'
-import Experience from './experience/experience'
-import Stats from './stats/stats'
-import Footer from './footer/footer'
-import End from './endbrand/end'
-import Navigator from './navigator/navigator'
+import loader from './assets/preloader.gif';
+const Header = React.lazy(() => import('./header/header'));
+const About = React.lazy(() => import('./about/about'));
+const Info = React.lazy(() => import('./info/info'));
+const Experience = React.lazy(() => import('./experience/experience'));
+const Stats = React.lazy(() => import('./stats/stats'));
+const Footer = React.lazy(() => import('./footer/footer'));
+const End = React.lazy(() => import('./endbrand/end'));
+const Navigator = React.lazy(() => import('./navigator/navigator'));
+
 
 class App extends Component 
 {
-  render()
-  {
+
+  sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
+
+  render() {
     return (
       <div className="App">
-        <Navigator/>
+        <Suspense fallback={<img src={loader} alt="Loading ..." onLoad={() => this.sleep(2000)} />}>
+          <Navigator />
           <Header />
           <About />
           <Info />
@@ -23,6 +34,7 @@ class App extends Component
           <Stats />
           <Footer />
           <End />
+        </Suspense>
       </div>
     );
   }
