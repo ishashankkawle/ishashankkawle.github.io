@@ -14,12 +14,12 @@ class Experience extends Component {
         for (let index = 0; index < this.timeline.length; index++) 
         {      
             let obj = this.timeline[index]; 
-            let contents = ""
+            let contents = "";
             if (obj.imagePath !== undefined) 
             {
                 contents = (<div className="row exp-content">
                 <div className="col-sm-3 align-self-center justify-content-center">
-                    <img className="exp-content-image" src={obj.imagePath} />
+                    <img alt="Content Image" className="exp-content-image" src={obj.imagePath} />
                 </div>
                 <div className="col-sm-8">
                     <div className="exp-content-header">

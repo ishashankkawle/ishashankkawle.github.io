@@ -63,7 +63,8 @@ let inputValues =
         {
             title : "Microsoft Certified Azure Fundamentals",
             date : "11-01-2020",
-            text : "Successfully cleared the exam for Azure Fundamentals provided by Microsoft (AZ-900)."
+            text : "Successfully cleared the exam for Azure Fundamentals provided by Microsoft (AZ-900).",
+            imagePath: "https://raw.githubusercontent.com/ishashankkawle/ishashankkawle.github.io/CoreSource/Images/azure-fundamentals-600x600.png"
         },
         {
             title : "Vistaar Technologies",
