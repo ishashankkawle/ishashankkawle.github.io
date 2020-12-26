@@ -13,17 +13,36 @@ class Experience extends Component {
         let items = []
         for (let index = 0; index < this.timeline.length; index++) 
         {      
-            let obj = this.timeline[index];                      
+            let obj = this.timeline[index]; 
+            let contents = ""
+            if (obj.imagePath !== undefined) 
+            {
+                contents = (<div className="exp-content">
+                <div>
+                    <img src={obj.imagepath} />
+                </div>
+                <div className="exp-content-header">
+                    <b>{obj.title}<br></br><small className="text-muted">{obj.date}</small></b>
+                </div>
+                <div>
+                    <small>{obj.text}</small>
+                </div>
+            </div>)
+            } 
+            else
+            {
+                contents = (<div className="exp-content">
+                <div className="exp-content-header">
+                    <b>{obj.title}<br></br><small className="text-muted">{obj.date}</small></b>
+                </div>
+                <div>
+                    <small>{obj.text}</small>
+                </div>
+            </div>)
+            }                     
             items.push(
                 <li key={index} className="align-items-center">
-                    <div className="exp-content">
-                        <div className="exp-content-header">
-                            <b>{obj.title}<br></br><small className="text-muted">{obj.date}</small></b>
-                        </div>
-                        <div>
-                            <small>{obj.text}</small>
-                        </div>
-                    </div>
+                    {contents}
                 </li>
             );
         }

@@ -55,7 +55,13 @@ let inputValues =
 
     timeline : [
         {
-            title : "Azure Fundamentals Certification",
+            title : "Microsoft Certified Azure Developer",
+            date : "13-11-2020",
+            text : "Successfully cleared the exam for Azure Developer provided by Microsoft (AZ-204).",
+            imagePath: ""
+        },
+        {
+            title : "Microsoft Certified Azure Fundamentals",
             date : "11-01-2020",
             text : "Successfully cleared the exam for Azure Fundamentals provided by Microsoft (AZ-900)."
         },
