@@ -17,15 +17,17 @@ class Experience extends Component {
             let contents = ""
             if (obj.imagePath !== undefined) 
             {
-                contents = (<div className="exp-content">
-                <div>
-                    <img src={obj.imagepath} />
+                contents = (<div className="row exp-content">
+                <div className="col-sm-3 align-self-center justify-content-center">
+                    <img className="exp-content-image" src={obj.imagePath} />
                 </div>
-                <div className="exp-content-header">
-                    <b>{obj.title}<br></br><small className="text-muted">{obj.date}</small></b>
-                </div>
-                <div>
-                    <small>{obj.text}</small>
+                <div className="col-sm-8">
+                    <div className="exp-content-header">
+                        <b>{obj.title}<br></br><small className="text-muted">{obj.date}</small></b>
+                    </div>
+                    <div>
+                        <small>{obj.text}</small>
+                    </div>
                 </div>
             </div>)
             } 

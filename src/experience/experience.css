@@ -74,6 +74,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;    
     padding: 2%;
+    margin-left: 0;
+    margin-right: 0;
 }
 .exp-content:hover
 {
@@ -82,6 +84,11 @@
 .exp-content-header
 {
     margin-bottom: 10px;
+}
+.exp-content-image
+{
+    width: 100px;
+    height: 100px;
 }
 
 

@@ -58,7 +58,7 @@ let inputValues =
             title : "Microsoft Certified Azure Developer",
             date : "13-11-2020",
             text : "Successfully cleared the exam for Azure Developer provided by Microsoft (AZ-204).",
-            imagePath: ""
+            imagePath: "https://raw.githubusercontent.com/ishashankkawle/ishashankkawle.github.io/CoreSource/Images/azure-developer-associate-600x600.png"
         },
         {
             title : "Microsoft Certified Azure Fundamentals",
