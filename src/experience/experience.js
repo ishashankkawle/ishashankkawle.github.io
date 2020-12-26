@@ -19,7 +19,7 @@ class Experience extends Component {
             {
                 contents = (<div className="row exp-content">
                 <div className="col-sm-3 align-self-center justify-content-center">
-                    <img alt="Content Image" className="exp-content-image" src={obj.imagePath} />
+                    <img className="exp-content-image" src={obj.imagePath} alt="Certificate" />
                 </div>
                 <div className="col-sm-8">
                     <div className="exp-content-header">
