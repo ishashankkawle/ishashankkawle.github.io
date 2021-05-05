@@ -3,17 +3,46 @@ import inputValues from '../Inputs'
 import './experience.css'
 
 class Experience extends Component {
-    constructor() {
-        super();
-        this.isFullView = false;
-        this.listLength = 0;
+    constructor(props) 
+    {
+        super(props);
+        this.state = {isFullView : false};
+        this.listLength = 3;
         this.timeline = inputValues["timeline"];
+        this.enableFullView = this.enableFullView.bind(this);
     }
 
-    render() {
+    getListLength()
+    {
+        if(!this.state.isFullView)
+        {
+            if(this.timeline.length < 3)
+            {
+                this.listLength = this.timeline.length;
+            }
+        }
+        else
+        {
+            this.listLength = this.timeline.length;
+        }
+        return this.listLength;
+    }
+
+    enableFullView()
+    {
+        console.log("enabling full view")
+        this.setState({isFullView : true})
+        console.log("State : " + this.state);
+    }
+
+    render() 
+    {
+        console.log(" Executing render")
         let items = []
-       
-        for (let index = 0; index < this.timeline.length; index++) 
+        let totalLength = this.getListLength();
+
+        console.log("List length = " + totalLength);
+        for (let index = 0; index < totalLength; index++) 
         {      
             let obj = this.timeline[index]; 
             let contents = "";
@@ -62,6 +91,14 @@ class Experience extends Component {
                         {items}
                     </ul>
                 </div> 
+                {!this.state.isFullView &&
+
+                    <div className="container pb-5">
+                        <button type="button" className="btn btn-outline-dark btn-circle" onClick={this.enableFullView}>
+                            <ion-icon class="timeline-expand-btn" name="arrow-down-outline"></ion-icon>
+                        </button>
+                    </div>
+                }
             </div>
         )
     }

@@ -91,6 +91,19 @@
     max-height: 100px;
 }
 
+.btn-circle
+{
+    border-radius: 50px;
+    text-align: center;
+    padding: 1% 2%;
+    font-size: 24px;
+}
+.timeline-expand-btn
+{
+    color: black !important;
+    margin-top: 7px;
+}
+
 
 @media only screen and (max-width:900px)
 {
@@ -150,8 +163,4 @@
         top: 15px;
         left: -4.2%;
     }
-}
-.more-button
-{
-    padding-bottom: 2%;
 }

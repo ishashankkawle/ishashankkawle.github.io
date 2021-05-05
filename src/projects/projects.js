@@ -19,7 +19,7 @@ class Projects extends Component {
                                 <h1 className="proj-title">ETM Task Manager</h1>
                                 <h5>This is Task Manager Desktop Application Template designed with ElecronJS , ES6 , NodeJs APIs and Bootstrap , vanilla HTML + CSS for UI designing.</h5>
                                 <h5>Also integrsted with PostgreSQL as RDBMS and MongoDB hosted on MongoDB Atlas cloud for Non-structured data.</h5>
-                                <span class="badge m-1 badge-pill badge-primary">ElectronJS</span><span class="badge m-1 badge-pill badge-warning"> Javascript</span><span class="badge m-1 badge-pill badge-secondary">HTML</span><span class="badge m-1 badge-pill badge-secondary">CSS</span><span class="badge m-1 badge-pill badge-success">Mongo</span><span class="badge m-1 badge-pill badge-info">PostgreSQL</span>
+                                <span className="badge m-1 badge-pill badge-primary">ElectronJS</span><span className="badge m-1 badge-pill badge-warning"> Javascript</span><span className="badge m-1 badge-pill badge-secondary">HTML</span><span className="badge m-1 badge-pill badge-secondary">CSS</span><span className="badge m-1 badge-pill badge-success">Mongo</span><span className="badge m-1 badge-pill badge-info">PostgreSQL</span>
                                 <br></br>
                                 <br></br>
                                 <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -40,7 +40,7 @@ class Projects extends Component {
                                 <h5>Laniak Text Editor is re-usable text editor. It is designed as an Angular library with Angular 11.</h5>
                                 <h5>It provives basic text editor functionality out of the box.</h5>
                                 <h5>It is hosted as an NPM package hence will be easy to add and integrate in any Node project.</h5>
-                                <span class="badge m-1 badge-pill badge-danger">Angular</span><span class="badge m-1 badge-pill badge-success"> Typescript</span><span class="badge m-1 badge-pill badge-secondary">HTML</span><span class="badge m-1 badge-pill badge-secondary">CSS</span>
+                                <span className="badge m-1 badge-pill badge-danger">Angular</span><span className="badge m-1 badge-pill badge-success"> Typescript</span><span className="badge m-1 badge-pill badge-secondary">HTML</span><span className="badge m-1 badge-pill badge-secondary">CSS</span>
                                 <br></br>
                                 <br></br>
                                 <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
