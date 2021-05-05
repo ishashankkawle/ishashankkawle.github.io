@@ -1,1 +1,0 @@
-{"version":3,"sources":["underdev.css"],"names":[],"mappings":"AAAA,cAEI,WACJ,CACA,yCAEI,eAEI,YACJ,CACJ","file":"10.2432af96.chunk.css","sourcesContent":[".underdev-box\n{\n    padding: 10%;\n}\n@media only screen and (max-width:400px)\n{\n    .developer-bot\n    {\n        display: none;\n    }\n}"]}
