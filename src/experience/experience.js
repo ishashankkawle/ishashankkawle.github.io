@@ -5,12 +5,14 @@ import './experience.css'
 class Experience extends Component {
     constructor() {
         super();
-
+        this.isFullView = false;
+        this.listLength = 0;
         this.timeline = inputValues["timeline"];
     }
 
     render() {
         let items = []
+       
         for (let index = 0; index < this.timeline.length; index++) 
         {      
             let obj = this.timeline[index]; 
@@ -49,6 +51,7 @@ class Experience extends Component {
             );
         }
 
+       
         return (
             <div id="experience" className="row banner-experience">
                 <div className="col-sm-12">
@@ -58,7 +61,7 @@ class Experience extends Component {
                     <ul>
                         {items}
                     </ul>
-                </div>
+                </div> 
             </div>
         )
     }
