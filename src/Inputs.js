@@ -55,6 +55,18 @@ let inputValues =
 
     timeline : [
         {
+            title : "Mulesoft Certified Developer (Level 1)",
+            date : "05-09-2021",
+            text : "Cleared exam for Mulesoft Certified Developer (Level 1).",
+            imagePath: "https://www.brighttalk.com/wp-content/uploads/2019/07/download.png"
+        },
+        {
+            title : "Apisero Inc.",
+            date : "05-08-2021",
+            text : "Joined Apisero Inc. as a Senior Software Enginee.",
+            imagePath: "https://b2b.getemail.io/logo.php?ndd=apisero.com"
+        },
+        {
             title : "Microsoft Certified Azure Developer",
             date : "13-11-2020",
             text : "Successfully cleared the exam for Azure Developer provided by Microsoft (AZ-204).",
