@@ -103,7 +103,7 @@ let inputValues =
         },
         {
             name : "Treks Completed",
-            value : "9"
+            value : "15"
         },
         {
             name : "Projects Completed",
