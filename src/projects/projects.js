@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './projects.css'
 import development from '../assets/App_development.png'
 import NPMdevelopment from '../assets/NPM_development.jpeg'
+import Muledevelopment from '../assets/mulesoft_main.png'
 
 
 class Projects extends Component {
@@ -54,6 +55,30 @@ class Projects extends Component {
                             </div>
                             <div className="col-sm-6">
                                 <img src={NPMdevelopment} alt="development" height="100%" width="60%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className="row proj-slide-box">
+                            <div className="col-sm-6 text-left">
+                                <h1 className="proj-title">Mule Core Backend</h1>
+                                <h5>Mule core backend is centralized backend for Electron Task Manager</h5>
+                                <h5>It is integrated with Mongodb Atlas, PostgreSql database and more services to come</h5>
+                                <h5>It is highly flexible, easy to understand, upgrade, deploy and maintain backend service.</h5>
+                                <span className="badge m-1 badge-pill badge-primary">Mulesoft</span><span className="badge m-1 badge-pill badge-success"> Mongo</span><span className="badge m-1 badge-pill badge-secondary">PostgreSql</span><span className="badge m-1 badge-pill badge-warning">REST</span>
+                                <br></br>
+                                <br></br>
+                                <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div className="btn-group mr-2 align-middle" role="group" aria-label="First group">
+                                        <a href="https://github.com/ishashankkawle/Mule-Task-Manager-API" className="btn btn-secondary"><ion-icon name="logo-github" style={{"fontSize":"20px","position": "relative","bottom": "-10%"}}></ion-icon> Github</a>
+                                    </div>
+                                    <div className="btn-group mr-2 align-middle" role="group" aria-label="First group">
+                                        <a href="https://ishashankkawle.github.io/Laniak-Core-API-Docs/r" className="btn btn-primary"><ion-icon name="globe-outline" style={{"fontSize":"20px","position": "relative","bottom": "-10%"}}></ion-icon> Docs</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <img src={Muledevelopment} alt="development" height="100%" width="60%" />
                             </div>
                         </div>
                     </div>
