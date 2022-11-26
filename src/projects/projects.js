@@ -21,7 +21,7 @@ class Projects extends Component {
                                 <h1 className="proj-title">ETM Task Manager</h1>
                                 <h5>This is Task Manager Desktop Application Template designed with ElecronJS , ES6 , NodeJs APIs and Bootstrap , vanilla HTML + CSS for UI designing.</h5>
                                 <h5>Also integrsted with PostgreSQL as RDBMS and MongoDB hosted on MongoDB Atlas cloud for Non-structured data.</h5>
-                                <span className="badge m-1 badge-pill badge-primary">ElectronJS</span><span className="badge m-1 badge-pill badge-warning"> Javascript</span><span className="badge m-1 badge-pill badge-secondary">HTML</span><span className="badge m-1 badge-pill badge-secondary">CSS</span><span className="badge m-1 badge-pill badge-success">Mongo</span><span className="badge m-1 badge-pill badge-info">PostgreSQL</span>
+                                <span className="badge m-1 badge-pill badge-primary">ElectronJS</span><span className="badge m-1 badge-pill badge-warning"> Javascript</span><span className="badge m-1 badge-pill badge-secondary">HTML</span><span className="badge m-1 badge-pill badge-secondary">CSS</span>
                                 <br></br>
                                 <br></br>
                                 <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -74,7 +74,7 @@ class Projects extends Component {
                                         <a href="https://github.com/ishashankkawle/Mule-Task-Manager-API" className="btn btn-secondary"><ion-icon name="logo-github" style={{"fontSize":"20px","position": "relative","bottom": "-10%"}}></ion-icon> Github</a>
                                     </div>
                                     <div className="btn-group mr-2 align-middle" role="group" aria-label="First group">
-                                        <a href="https://ishashankkawle.github.io/Laniak-Core-API-Docs/r" className="btn btn-primary"><ion-icon name="globe-outline" style={{"fontSize":"20px","position": "relative","bottom": "-10%"}}></ion-icon> Docs</a>
+                                        <a href="https://ishashankkawle.github.io/Laniak-Core-API-Docs/" className="btn btn-primary"><ion-icon name="globe-outline" style={{"fontSize":"20px","position": "relative","bottom": "-10%"}}></ion-icon> Docs</a>
                                     </div>
                                 </div>
                             </div>
