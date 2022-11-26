@@ -79,7 +79,7 @@ class Projects extends Component {
                                 </div>
                             </div>
                             <div className="col-sm-6">
-                                <img src={Muledevelopment} alt="development" height="100%" width="60%" />
+                                <img src={Muledevelopment} alt="development" height="100%" width="100%" />
                             </div>
                         </div>
                     </div>
