@@ -26,6 +26,7 @@ jobs:
           echo "PRE-BUILD FOLDER TATUS"
           echo "--------------------------------------------"
           ls
+          npm audit fix --force
           echo "--------------------------------------------"
           echo "STARTING BUILD"
           echo "--------------------------------------------"
