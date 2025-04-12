@@ -1,0 +1,44 @@
+.skillset
+{
+    width: 65%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsetblock
+{
+    flex: 1;
+}
+
+.skillbullet
+{
+    color: var(--accent-color);
+}
+
+.skillset .content h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.skillset .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skillset .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.skillset .content ul strong {
+    margin-right: 10px;
+}
+
+.skillset .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: var(--accent-color);
+    line-height: 0;
+}

@@ -1,0 +1,172 @@
+/* Fonts */
+:root {
+  --default-font: "Ubuntu Sans", sans-serif;
+  --heading-font: "Ubuntu Sans",  sans-serif;
+  --nav-font: "Ubuntu Sans",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #232323; /* Background color for the entire website, including individual sections */
+  --default-color: #f2f2f2; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #fff; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #11bb05; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #2a2a2a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #fff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #fff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #2a2a2a; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #2a2a2a; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #2a2a2a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #0563bb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #232323;
+  --surface-color: #2a2a2a;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+
+/*--------------------------------------------------------------
+# Scroll Bar
+--------------------------------------------------------------*/
+*::-webkit-scrollbar
+{
+	width: 1px;
+  height: 1px;
+	background-color: var(--light-bg-primary);
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: var(--nav-dropdown-background-color);
+}
+
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font) !important; 
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* font-variation-settings: "wdth" 100; */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: dotted;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+ul
+{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.scrollable
+{
+  overflow-y: scroll;
+}
+
+.rounded
+{
+  border-radius: 50%;
+}
+
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);;
+  /* padding: 60px 0; */
+  overflow: clip;
+}
+
+.section-title {
+  height: auto;
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,104 @@
+.hero {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    /* padding: 80px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.resumeBtn
+{
+    background-color: var(--accent-color);
+}
+
+.resumeBtn:hover
+{
+    background-color: color-mix(in srgb, var(--accent-color), transparent 32%);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero p {
+    margin: 5px 0 0 0;
+    font-size: 26px;
+}
+
+.hero p span {
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+}
+
+.hero .personalinfo ul {
+    list-style-type: none;
+    padding-left: 10%
+}
+
+.hero .personalinfo ul i {
+    color: var(--accent-color);
+    padding: 5px 0px;
+}
+
+.hero .personalinfo ul li {
+    padding: 5px 0px;
+}
+
+.heroimg
+{
+    position: fixed;
+    bottom: 0;
+    top: 20%;
+}
+
+.heroimgblock
+{
+    display: block;
+}
+
+
+@media (max-width: 1140px) {
+    .heroimgblock
+    {
+        display: none;
+    }
+
+    .herointroblock
+    {
+        width: 100% !important
+    }
+
+    .hero .personalinfo ul {
+        list-style-type: none;
+        padding-left: 0
+    }
+}
