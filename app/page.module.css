@@ -3,6 +3,56 @@
   align-items: center;
   justify-content: center;
   height: 100svh !important;
-  padding: 25% 5% !important;
+  padding: 5% 5% !important;
   width: 100% !important;
+}
+
+@media (max-width: 1040px) {
+  .page
+  {
+    padding-top: 8% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 840px) {
+  .page
+  {
+    padding-top: 10% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .page
+  {
+    padding-top: 15% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .page
+  {
+    padding-top: 20% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 350px) {
+  .page
+  {
+    padding-top: 25% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
 }

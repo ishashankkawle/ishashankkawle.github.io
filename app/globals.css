@@ -107,7 +107,7 @@ ul
 
 .scrollable
 {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .rounded

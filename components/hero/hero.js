@@ -14,7 +14,7 @@ export default function Hero({dataObj}) {
       loop: true,
       typeSpeed: 100,
       backSpeed: 100,
-      backDelay: 5000,
+      backDelay: 2000,
       showCursor: false
     });
   }
