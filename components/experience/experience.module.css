@@ -27,7 +27,6 @@
 
 .experienceitem {
   padding: 0 0 50px 20px;
-  margin-top: -2px;
   border-left: 2px solid var(--accent-color);
   position: relative;
 }
