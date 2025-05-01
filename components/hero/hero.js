@@ -66,7 +66,7 @@ export default function Hero({dataObj}) {
 
             <div className={`col-lg-5 ${styles.heroimgblock}`}>
               <div className={`${styles.heroimg}`}>
-                  <img src="/Hero.png" className={`img-fluid`} width="auto" height="auto" alt="" />
+                  <img src={heroData.imgUrl} className={`img-fluid`} width="auto" height="auto" alt="" />
               </div>
             </div>
           </div>

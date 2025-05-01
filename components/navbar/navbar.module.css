@@ -115,10 +115,14 @@
 }
 
 
-
 .navmenu a:hover,
-.navmenu a.active,
-.navmenu a.active:focus,
+/* .navmenu a.active,
+.navmenu a.active:focus, */
 .navmenu li:hover>a {
   border: 2px solid var(--accent-color);
+}
+
+.navmenuactive
+{
+    border: 2px solid var(--accent-color) !important;
 }
