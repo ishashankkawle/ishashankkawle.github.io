@@ -10,7 +10,6 @@
     "trial": "npx http-server ./out"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3",
     "next": "15.2.4",
